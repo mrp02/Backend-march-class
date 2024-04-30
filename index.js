@@ -4,7 +4,7 @@ let port = process.env.PORT || 8000
 const userRouter = require('./Routes/User.routes');
 // const authMiddleware = require('./Middlewares/authMiddleware');
 // let uri = process.env.MONGODB_URI;
-let uri = "mongodb+srv://patrickolamide005:facebook33@cluster0.l07fkwl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+let uri = process.env.URI;
 const cors = require('cors')
 const mongoose = require('mongoose');
 const app = express();
